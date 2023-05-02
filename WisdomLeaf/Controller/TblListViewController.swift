@@ -10,9 +10,11 @@ import MBProgressHUD
 
 class TblListViewController: UIViewController {
 
+    // MARK: IBoutlet
     @IBOutlet var lblNoDataMessage: UILabel!
     @IBOutlet var tblView: UITableView!
     
+    // MARK: Variable
     var dataArr: [AutherInfoViewModel]! = []
     var selectedDataArr: [AutherInfoViewModel]! = []
     let refreshControl = UIRefreshControl()
