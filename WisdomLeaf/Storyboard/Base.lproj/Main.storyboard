@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,7 +25,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="XRL-rE-Izv" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="5rg-0d-GLt"/>
                             <constraint firstItem="XRL-rE-Izv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bna-Lf-pbu"/>
@@ -43,18 +42,18 @@
             <objects>
                 <viewController storyboardIdentifier="TblListViewController" id="Ef6-cR-Spc" customClass="TblListViewController" customModule="WisdomLeaf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rz2-b7-BAe">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sky-pb-ndh">
-                                <rect key="frame" x="122.66666666666669" y="449" width="148" height="23"/>
+                                <rect key="frame" x="122.66666666666669" y="346" width="148" height="23"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Cvq-j5-5Ui">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="715"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TblListCell" rowHeight="154" id="mGj-uB-1Hv" customClass="TblListCell" customModule="WisdomLeaf" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="154"/>
@@ -104,6 +103,7 @@
                                                 <constraint firstItem="QVS-1K-Cjm" firstAttribute="top" secondItem="oBy-Xc-hed" secondAttribute="bottom" constant="15" id="vyT-9T-jk9"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="checkImgView" destination="ze7-sl-M0u" id="6Yt-4q-NjQ"/>
                                             <outlet property="imgView" destination="HRm-Zr-dDS" id="4gg-hn-n20"/>
@@ -119,7 +119,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Zk9-Fc-uM6"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Zk9-Fc-uM6" firstAttribute="trailing" secondItem="Cvq-j5-5Ui" secondAttribute="trailing" id="DY7-3I-lff"/>
                             <constraint firstItem="Sky-pb-ndh" firstAttribute="centerX" secondItem="Zk9-Fc-uM6" secondAttribute="centerX" id="NG2-sY-E8q"/>
@@ -144,9 +144,10 @@
             <objects>
                 <navigationController storyboardIdentifier="homeNav" automaticallyAdjustsScrollViewInsets="NO" id="WUx-uS-BbU" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8IV-bl-hfj">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="8IV-bl-hfj">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -162,8 +163,5 @@
     <resources>
         <image name="empty" width="64" height="64"/>
         <image name="library" width="800" height="483"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

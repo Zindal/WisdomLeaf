@@ -44,7 +44,6 @@ class TblListViewController: UIViewController {
     // Refresh control target function
     @objc func refresh(_ sender: AnyObject) {
         // This will refresh list from page 1.
-        dataArr = []
         pageCount = 1
         fetchList()
         refreshControl.endRefreshing()
@@ -72,7 +71,8 @@ class TblListViewController: UIViewController {
     }
     
     func handleSuccessResponse(response:AutherListModel) {
-        self.dataArr.append(contentsOf: response)
+        guard response.count > 0 else { return }
+        pageCount == 1 ? (self.dataArr = response) : (self.dataArr.append(contentsOf: response))
         self.tblView.isHidden = false
         self.lblNoDataMessage.isHidden = true
         self.tblView.reloadData()
