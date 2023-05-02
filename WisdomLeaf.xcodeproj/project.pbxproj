@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		BB3B8A392A0102BB00FD434B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3B8A382A0102BB00FD434B /* AppDelegate.swift */; };
-		BB3B8A3B2A0102BB00FD434B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3B8A3A2A0102BB00FD434B /* SceneDelegate.swift */; };
-		BB3B8A3D2A0102BB00FD434B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3B8A3C2A0102BB00FD434B /* ViewController.swift */; };
+		BB3B8A3D2A0102BB00FD434B /* TblListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3B8A3C2A0102BB00FD434B /* TblListViewController.swift */; };
 		BB3B8A402A0102BB00FD434B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB3B8A3E2A0102BB00FD434B /* Main.storyboard */; };
 		BB3B8A422A0102C000FD434B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB3B8A412A0102C000FD434B /* Assets.xcassets */; };
-		BB3B8A452A0102C000FD434B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB3B8A432A0102C000FD434B /* LaunchScreen.storyboard */; };
 		BB3B8A502A0102C100FD434B /* WisdomLeafTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3B8A4F2A0102C100FD434B /* WisdomLeafTests.swift */; };
 		BB3B8A5A2A0102C100FD434B /* WisdomLeafUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3B8A592A0102C100FD434B /* WisdomLeafUITests.swift */; };
 		BB3B8A5C2A0102C100FD434B /* WisdomLeafUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3B8A5B2A0102C100FD434B /* WisdomLeafUITestsLaunchTests.swift */; };
+		BB3B8A692A0104AC00FD434B /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3B8A682A0104AC00FD434B /* LaunchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,17 +37,16 @@
 /* Begin PBXFileReference section */
 		BB3B8A352A0102BB00FD434B /* WisdomLeaf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WisdomLeaf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3B8A382A0102BB00FD434B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB3B8A3A2A0102BB00FD434B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BB3B8A3C2A0102BB00FD434B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB3B8A3C2A0102BB00FD434B /* TblListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TblListViewController.swift; sourceTree = "<group>"; };
 		BB3B8A3F2A0102BB00FD434B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB3B8A412A0102C000FD434B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BB3B8A442A0102C000FD434B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB3B8A462A0102C000FD434B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB3B8A4B2A0102C100FD434B /* WisdomLeafTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WisdomLeafTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3B8A4F2A0102C100FD434B /* WisdomLeafTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisdomLeafTests.swift; sourceTree = "<group>"; };
 		BB3B8A552A0102C100FD434B /* WisdomLeafUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WisdomLeafUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3B8A592A0102C100FD434B /* WisdomLeafUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisdomLeafUITests.swift; sourceTree = "<group>"; };
 		BB3B8A5B2A0102C100FD434B /* WisdomLeafUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisdomLeafUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BB3B8A682A0104AC00FD434B /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +98,10 @@
 			isa = PBXGroup;
 			children = (
 				BB3B8A382A0102BB00FD434B /* AppDelegate.swift */,
-				BB3B8A3A2A0102BB00FD434B /* SceneDelegate.swift */,
-				BB3B8A3C2A0102BB00FD434B /* ViewController.swift */,
+				BB3B8A3C2A0102BB00FD434B /* TblListViewController.swift */,
+				BB3B8A682A0104AC00FD434B /* LaunchViewController.swift */,
 				BB3B8A3E2A0102BB00FD434B /* Main.storyboard */,
 				BB3B8A412A0102C000FD434B /* Assets.xcassets */,
-				BB3B8A432A0102C000FD434B /* LaunchScreen.storyboard */,
 				BB3B8A462A0102C000FD434B /* Info.plist */,
 			);
 			path = WisdomLeaf;
@@ -231,7 +228,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB3B8A452A0102C000FD434B /* LaunchScreen.storyboard in Resources */,
 				BB3B8A422A0102C000FD434B /* Assets.xcassets in Resources */,
 				BB3B8A402A0102BB00FD434B /* Main.storyboard in Resources */,
 			);
@@ -258,9 +254,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB3B8A3D2A0102BB00FD434B /* ViewController.swift in Sources */,
+				BB3B8A3D2A0102BB00FD434B /* TblListViewController.swift in Sources */,
+				BB3B8A692A0104AC00FD434B /* LaunchViewController.swift in Sources */,
 				BB3B8A392A0102BB00FD434B /* AppDelegate.swift in Sources */,
-				BB3B8A3B2A0102BB00FD434B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,14 +299,6 @@
 				BB3B8A3F2A0102BB00FD434B /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BB3B8A432A0102C000FD434B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BB3B8A442A0102C000FD434B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -440,7 +428,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WisdomLeaf/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -467,7 +455,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WisdomLeaf/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
