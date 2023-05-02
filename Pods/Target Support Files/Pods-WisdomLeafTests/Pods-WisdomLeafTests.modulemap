@@ -1,0 +1,6 @@
+framework module Pods_WisdomLeafTests {
+  umbrella header "Pods-WisdomLeafTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

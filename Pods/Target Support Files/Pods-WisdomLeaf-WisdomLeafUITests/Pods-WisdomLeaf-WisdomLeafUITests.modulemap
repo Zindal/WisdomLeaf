@@ -1,0 +1,6 @@
+framework module Pods_WisdomLeaf_WisdomLeafUITests {
+  umbrella header "Pods-WisdomLeaf-WisdomLeafUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
